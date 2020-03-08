@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Nav></Nav>
+    <hello msg = "ECOSSISTEMA DE APRENDIZAGEM"></hello>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <card title="ECOSSISTEMA DE APRENDIZAGEM" content = "Espaço destinado a propagação de ideias e ..." url = "https://ecossistema.uninta.edu.br" />
+        </div>
+        <div class="col-md-4">
+          <card title="ECOSSISTEMA DE APRENDIZAGEM" content = "Espaço destinado a propagação de ideias e ..." url = "https://ecossistema.uninta.edu.br" />
+        </div>
+      </div>
+    </div>  
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Card from './components/Card.vue'
+import Hello from './components/Hello.vue'
+import Nav from './components/Nav'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card,
+    Hello,
+    Nav
   }
 }
 </script>
 
 <style>
+h1, h2, h3, h4 { 
+  font-family: 'Alata', sans-serif;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
